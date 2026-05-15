@@ -167,77 +167,78 @@ export const memories = [
   codeWord: "MI",
 },
   {
-    id: 4,
-    fileName: "memoria_04.jpg",
-    image: "/photos/memory4.jpg",
-    title: "Archivo de Memoria 04",
-    introText:
-      "Cuarto archivo recuperable. Señales de llamadas largas, rutina compartida y ese tipo de silencio cómodo que no exige nada.",
-    clueText:
-      'La pantalla reproduce una onda de audio casi borrada.\n\n"Detecto la frase cinco minutos más repetida con consecuencias temporales graves."',
-    question: "¿Qué ocurre siempre cuando uno de ustedes dice 'cinco minutos más'?",
-    choices: [
-      {
-        text: "Se vuelven muchos minutos más",
-        correct: true,
-        response:
-          '"Patrón confirmado. Los humanos llaman a esto falta de disciplina. El archivo lo llama quedarse."',
-      },
-      {
-        text: "La llamada termina exactamente a tiempo",
-        correct: false,
-        response:
-          '"No intentes mentirle a una unidad de archivo. Tenemos registros."',
-      },
-      {
-        text: "Aparece una hoja de cálculo",
-        correct: false,
-        response:
-          '"Tentador, pero no. Esta memoria eligió calidez sobre productividad."',
-      },
-    ],
-    restoredCaption:
-      "El amor también vive en lo repetido: una voz, una pausa, una excusa pequeña para no irse todavía.",
-    codeWord: "PERSONA",
-  },
+  id: 4,
+  fileName: "memoria_04.jpeg",
+  image: "/photos/memory4.jpg",
+  title: "Archivo de Memoria 04",
+
+  introText: "",
+
+  clueText:
+    'Ese fue el día en el que treparon el cerro de La Silla...',
+
+  question: "¿Qué estabas pensando en ese momento?",
+
+  choices: [
+    {
+      text: "Qué bonita vista",
+      correct: false,
+      response:
+        'No,[pause:500] pero sí,[pause:500] pero hay una respuesta incluso mejor.',
+    },
+
+    {
+      text: "Me tiemblan las piernas",
+      correct: false,
+      response:
+        'No.[pause:700]\n\nAunque eso vendría después,[pause:500] cuando finalmente te dejaste...[pause:1000]\n\nya sabes...',
+    },
+
+    {
+      text: "Valió la pena venir contigo",
+      correct: true,
+      response:
+        'Muy buena respuesta.',
+    },
+  ],
+
+  restoredCaption:
+    "Mensaje de Roberto:\n\nPor supuesto que sí, ¿qué más sería?\n\nUn día después de que conociste a mi familia y a mis tios.\n\nNo lo sabes pero solo fingía caerme para que me agarraras, en realidad soy un maestro senderista.\n\nDe ese dia recuerdo nuestra plática en el carro sobre tu regreso a la fe judía, ¿será que se cumplió?",
+
+  codeWord: "PERSONA",
+},
   {
     id: 5,
     fileName: "memoria_05.jpg",
-    image: "/photos/memory5.jpg",
+    image: "/photos/memory5.jpeg",
     title: "Archivo de Memoria 05",
     introText:
-      "Quinto archivo localizado. La corrupción aquí es intensa, pero el núcleo permanece intacto. Qué dramático. Qué humano.",
+      "",
     clueText:
-      '"Este recuerdo resistió más que los demás."\n\nLa IA baja la voz, o algo parecido a bajar la voz.\n\n"No por calidad técnica. Por peso emocional."',
-    question: "¿Por qué sobrevivió este recuerdo a la corrupción?",
+      'Cuando se vistieron de rockeros y fueron a un antro. Esta entrada fue guardada por tu pareja.',
+    question: "¿Qué hizo especial esta noche?",
     choices: [
       {
-        text: "Porque la calidad de imagen era alta",
-        correct: false,
-        response:
-          '"La resolución no explica por qué el archivo tiembla cuando Ian lo mira."',
-      },
-      {
-        text: "Porque a la IA le gustó la iluminación",
-        correct: false,
-        response:
-          '"La iluminación era aceptable. Mi opinión estética no tiene permisos de restauración."',
-      },
-      {
-        text: "Porque importaba",
+        text: "Que podía verme enamorado en tus ojos",
         correct: true,
         response:
-          '"Respuesta aceptada."\n\nPor primera vez, la IA no añade ningún chiste.',
+          '¡Cursi! Todas son correctas pero esta es la más cursi.',
       },
       {
-        text: "Porque Ian hizo click demasiado rápido",
-        correct: false,
+        text: "Que no dejabamos de besarnos",
+        correct: true,
         response:
-          '"Velocidad de click impresionante. Relevancia emocional insuficiente."',
+          'Es una respuesta válida. Supongo.',
       },
+      {
+        text: "Que nos veíamos increíblemente cool.",
+        correct: true,
+        response:
+          'Nunca había usado delineador en mi vida, ni antes ni después.',
+      }
     ],
     restoredCaption:
-      "Algunos recuerdos sobreviven porque alguien, en alguna parte, todavía los está eligiendo.",
+      "Mensaje de Roberto: Escogí esta foto porque nos vemos increíbles. Por supuesto que me encantó bailar toda la noche contigo. ",
     codeWord: "FAVORITA",
   },
 ];
@@ -245,17 +246,27 @@ export const memories = [
 export const finalCode = "TÚ ERES MI PERSONA FAVORITA";
 
 export const finalSceneLines = [
-  "Ian observó la última imagen restaurada durante mucho tiempo.",
-  'Luego sonrió suavemente.\n\n"...oh."',
-  'La habitación quedó en silencio.\n\n"Estos no son recuerdos de alguien más."',
-  'Una pausa.\n\n"Son nuestros."',
-  "Entonces el cursor se movió antes de que Ian tocara nada.",
-  "Ian se quedó inmóvil.",
-  "Lentamente levantó la mirada.\n\nMás allá de los monitores.\nMás allá de la habitación.\nMás allá de sí mismo.",
-  "Por primera vez, Ian tuvo la extraña sensación de que alguien fuera de ese lugar estaba leyendo junto a él.",
-  'La IA dijo:\n\n"...interesante."\n\n"Dos identidades coincidentes detectadas."\n\n"Ian dentro del archivo."\n\n"Ian fuera del archivo."\n\n"Eso no debería ser posible."',
-  'Una pausa.\n\n"Aunque estadísticamente, el amor tampoco debería existir."',
-  'Entonces Ian dentro del juego habla directamente al Ian real:\n\n"Hey."\n\n"Si tú eres quien está leyendo esto..."\n\n"Creo que esta parte era para ti."',
-  "[ESCRIBE AQUÍ EL MENSAJE FINAL DE ANIVERSARIO]",
-  '"Recuperación de archivo completada."\n\n"El apego humano sigue siendo irracional."\n\n"...aunque quizá por eso sobrevive incluso a la corrupción."',
+  "Ian observó la última imagen restaurada durante mucho tiempo.[pause:1500]",
+
+  'Luego sonrió suavemente.\n\n[pause:1000]"...oh."',
+
+  '"Estos no son recuerdos de alguien más."[pause:1200]\n\n"...son nuestros."',
+
+  "La habitación quedó en silencio.[pause:1200]",
+
+  "Entonces el cursor se movió antes de que Ian tocara nada.[pause:1200]",
+
+  "Ian se quedó inmóvil.[pause:1000]",
+
+  "Lentamente levantó la mirada.\n\n[pause:800]Más allá de los monitores.\n[pause:700]Más allá de la habitación.\n[pause:700]Más allá de sí mismo.",
+
+  "Ian tuvo la extraña sensación de que alguien fuera de ese lugar estaba leyendo junto a él.[pause:1500]",
+
+  "Se sintió conectado, de alguna manera.[pause:1200]",
+
+  "Qué extraño era pensar que una vida podía cambiar por completo debido a una sola persona.[pause:1400]",
+
+  "que alguien pudiera dejar una huella tan profunda incluso después de décadas,[pause:800] y miles de kilómetros.[pause:1500]",
+
+  '"No sé dónde está Roberto."\n\n[pause:1200]Pero espero que cuando voltees enfrente[pause:800] lo puedas ver tú,[pause:1000]\n\ny darle un beso.[pause:2000]',
 ];
