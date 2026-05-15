@@ -189,9 +189,9 @@ export default function App() {
 
       {phase === phases.END && (
         <section className="panel end-screen">
-          <p className="eyebrow">ARCHIVE RESTORED</p>
-          <h2>Gracias por recuperarnos.</h2>
-          <p>El archivo us.mem permanece abierto. Esta vez, sin corrupción.</p>
+          <p className="eyebrow"></p>
+          <h2>Archivo restaurado.</h2>
+          <p>Final de la aventura. ¡Gracias por jugar!</p>
         </section>
       )}
     </main>

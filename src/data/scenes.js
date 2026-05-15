@@ -169,13 +169,13 @@ export const memories = [
   {
   id: 4,
   fileName: "memoria_04.jpeg",
-  image: "/photos/memory4.jpg",
+  image: "/photos/memory4.jpeg",
   title: "Archivo de Memoria 04",
 
   introText: "",
 
   clueText:
-    'Ese fue el día en el que treparon el cerro de La Silla...',
+    '"Este fue el día en el que treparon el cerro de La Silla..."',
 
   question: "¿Qué estabas pensando en ese momento?",
 
@@ -215,7 +215,7 @@ export const memories = [
     introText:
       "",
     clueText:
-      'Cuando se vistieron de rockeros y fueron a un antro. Esta entrada fue guardada por tu pareja.',
+      '"Cuando se vistieron de rockeros y fueron a un antro."\n\n"Esta entrada fue guardada por tu pareja."',
     question: "¿Qué hizo especial esta noche?",
     choices: [
       {
@@ -234,7 +234,7 @@ export const memories = [
         text: "Que nos veíamos increíblemente cool.",
         correct: true,
         response:
-          'Nunca había usado delineador en mi vida, ni antes ni después.',
+          'Nunca había usado delineador en mi vida, ni antes ni después. Pero me veía cool.',
       }
     ],
     restoredCaption:
@@ -248,15 +248,7 @@ export const finalCode = "TÚ ERES MI PERSONA FAVORITA";
 export const finalSceneLines = [
   "Ian observó la última imagen restaurada durante mucho tiempo.[pause:1500]",
 
-  'Luego sonrió suavemente.\n\n[pause:1000]"...oh."',
-
-  '"Estos no son recuerdos de alguien más."[pause:1200]\n\n"...son nuestros."',
-
-  "La habitación quedó en silencio.[pause:1200]",
-
-  "Entonces el cursor se movió antes de que Ian tocara nada.[pause:1200]",
-
-  "Ian se quedó inmóvil.[pause:1000]",
+  'Sonrió suavemente.\n\n[pause:1000]"...oh."',
 
   "Lentamente levantó la mirada.\n\n[pause:800]Más allá de los monitores.\n[pause:700]Más allá de la habitación.\n[pause:700]Más allá de sí mismo.",
 
