@@ -16,6 +16,8 @@ export default function MemoryFile({
   const [introDone, setIntroDone] = useState(false);
   const [clueDone, setClueDone] = useState(false);
   const [responseDone, setResponseDone] = useState(false);
+  const hasIntroText = Boolean(memory.introText?.trim());
+  const hasClueText = Boolean(memory.clueText?.trim());
   const lockedVisuals = memoryVisualSettings.locked;
   const visualStyle = {
     "--block-size": `${lockedVisuals.blockSize}px`,
@@ -35,11 +37,11 @@ export default function MemoryFile({
   }, [response]);
 
   useEffect(() => {
-    setIntroDone(false);
-    setClueDone(false);
+    setIntroDone(!hasIntroText);
+    setClueDone(!hasClueText);
     setResponseDone(false);
     wasRestored.current = restored;
-  }, [memory.id]);
+  }, [hasClueText, hasIntroText, memory.id]);
 
   useEffect(() => {
     if (restored && !wasRestored.current && imageRef.current) {
@@ -76,15 +78,17 @@ export default function MemoryFile({
         {!restored && <div className="corruption-overlay" aria-hidden="true" />}
       </div>
 
-      <div className="memory-intro">
-        <TypewriterText
-          key={`intro-${memory.id}`}
-          text={memory.introText}
-          onDone={() => setIntroDone(true)}
-        />
-      </div>
+      {hasIntroText && (
+        <div className="memory-intro">
+          <TypewriterText
+            key={`intro-${memory.id}`}
+            text={memory.introText}
+            onDone={() => setIntroDone(true)}
+          />
+        </div>
+      )}
 
-      {introDone && (
+      {introDone && hasClueText && (
         <div className="memory-clue">
           <TypewriterText
             key={`clue-${memory.id}`}
